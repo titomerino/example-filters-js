@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Prueba</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="pt-3 pb-3">
+    <div class="container">
+      <h1 class="text-light"><a href="/">Jobs.ie</a> / Training In Ireland Education Courses</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <aside class="filter-wrapper mt-3 position-sticky">
+          <form action="" id="filters">
+            <p>Filters</p>
+            <input class="form-control mb-3" name="keyword" type="text" placeholder="Keyword">
+            <select class="form-control mb-3" name="location" id="locations">
+              <!-- Fill with js-->
+            </select>
+            <select class="form-control mb-3" name="category" id="categories">
+              <!-- Fill with js-->
+            </select>
+            <label for="modality">Modality</label>
+            <div class="mb-3" data-modality-filter>
+              <!-- Fill with js-->
+            </div>
+            <button type="submit" class="btn btn-warning">Search</button>
+            <button type="button" class="btn btn-dark" onclick="formReset()">
+              <i class="bi bi-arrow-counterclockwise"></i>Reset
+            </button>
+          </form>
+          <br>
+          <p class="">
+            Courses <strong data-visible></strong> of <strong data-total></strong>
+          </p>
+        </aside>
+      </div>
+      <!-- Sidebar end -->
+      <!-- Main content -->
+      <div class="col-md-9">
+        <main id="main" role="main">
+          <ul class="list-unstyled mt-3" data-course-list>
+            <!-- Fill with js-->
+            <li><h3>Loading courses ... </h3></li>
+          </ul>
+        </main>
+      </div>
+      <!-- Main content end -->
+    </div>
+  </div>
+
+  <footer>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Scripts end-->
+</body>
+</html>

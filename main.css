@@ -1,0 +1,73 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+header {
+    background-image: url(https://www.jobs.ie/job-talk/wp-content/uploads/Header-Images/header_banner_small_medical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Filter wrapper component */
+.filter-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    top: 1rem;
+}
+/* Filter wrapper component end */
+
+/* course card component */
+.course-card {
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    position: relative;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+.course-card:hover {
+    background-color: #f2f2f2;
+}
+.course-card > a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .course-card > .image {
+        width: 100%;
+    }
+    .course-card > .image > img {
+        display: none;
+    }
+    .course-card > .content {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .course-card {
+        display: flex;
+    }
+    .course-card > .image {
+        flex: 0 0 15%;
+        max-width: 15%;/* for ie11 */
+        text-align: center;
+    }
+    .course-card > .image > img {
+        width: 100%;
+    }
+    .course-card > .content {
+        flex: 0 0 85%;
+        max-width: 85%;
+        padding-right: 1rem;
+    }
+}
+/* course card component end */
+
+footer {
+    /**/
+}
